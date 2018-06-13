@@ -45,3 +45,12 @@ sudo docker run -p 8080:8080 microservice-python:latest
 kubectl create -f deploy/kubernetes
 ```
 
+<br>
+
+## Delete
+
+```
+kubectl delete -f deploy/kubernetes
+```
+
+
