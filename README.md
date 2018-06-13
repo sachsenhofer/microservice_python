@@ -1,6 +1,6 @@
 # microservice_python
 
-This is a template to build a Python microservice application.
+This is a template for a Python microservice on Kubernetes.
 
 <br>
 Checkout repository:
