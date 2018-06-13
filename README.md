@@ -68,7 +68,7 @@ sudo docker build -t microservice-python:latest .
 
 ### Push
 
-A Google Cloud account is needed. Replace 'public-207110' with your own Project-ID.
+A Google Cloud account is needed. Replace '__public-207110__' with your own Project-ID.
 
 Execute in terminal:
 
