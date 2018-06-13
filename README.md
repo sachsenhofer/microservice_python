@@ -6,7 +6,7 @@ This is a template to build a microservice for Python.
 
 # Usage
 
-## Build
+__Build__
 
 ```
 sudo docker build -t microservice-python:latest .
@@ -14,7 +14,7 @@ sudo docker build -t microservice-python:latest .
 
 <br>
 
-## Push
+__Push__
 
 (Google Cloud account needed)
 
@@ -25,7 +25,7 @@ sudo docker push eu.gcr.io/public-207110/microservice-python:latest
 
 <br>
 
-## Pull
+__Pull__
 
 ```
 sudo docker pull eu.gcr.io/public-207110/microservice-python:latest
@@ -33,7 +33,7 @@ sudo docker pull eu.gcr.io/public-207110/microservice-python:latest
 
 <br>
 
-## Run
+__Run__
 
 ```
 sudo docker run -p 8080:8080 microservice-python:latest
@@ -41,7 +41,7 @@ sudo docker run -p 8080:8080 microservice-python:latest
 
 <br>
 
-## Deploy
+__Deploy__
 
 ```
 kubectl create -f deploy/kubernetes
@@ -49,7 +49,7 @@ kubectl create -f deploy/kubernetes
 
 <br>
 
-## Delete
+__Delete__
 
 ```
 kubectl delete -f deploy/kubernetes
