@@ -106,6 +106,8 @@ Execute in terminal:
 kubectl create -f deploy/kubernetes
 ```
 
+<br>
+
 Get the external IP address of the loadbalancer:
 
 ```
@@ -117,7 +119,9 @@ NAME                      TYPE           CLUSTER-IP      EXTERNAL-IP      PORT(S
 microservice-python-svc   LoadBalancer   10.63.251.103   104.155.76.135   8080:30667/TCP   2m
 ```
 
-Check ressources that have been created:
+<br>
+
+Check all ressources that have been created:
 
 ```
 kubectl get deployments,pods,services -n microservice
