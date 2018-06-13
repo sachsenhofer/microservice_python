@@ -69,6 +69,12 @@ __Deploy:__
 kubectl create -f deploy/kubernetes
 ```
 
+To get the external IP address of the loadbalancer:
+
+```
+kubectl get svc microservice-python-svc -n microservice
+```
+
 <br>
 
 __Delete:__
