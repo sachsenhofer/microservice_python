@@ -85,7 +85,7 @@ sudo docker pull eu.gcr.io/public-207110/microservice-python:latest
 __Run:__
 
 ```
-sudo docker run -p 8080:8080 microservice-python:latest
+sudo docker run -p 8080:8080 eu.gcr.io/public-207110/microservice-python:latest
 ```
 
 <br>
