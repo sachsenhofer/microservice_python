@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+ name: microservice-python-svc
+ namespace: microservice
+spec:
+ selector:
+   app: microservice-python
+ ports:
+ - protocol: TCP
+   port: 8080
+   targetPort: 8080

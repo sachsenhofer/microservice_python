@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: microservice-python-dep
+ labels:
+   app: microservice-python
+ namespace: microservice
+spec:
+ replicas: 2
+ selector:
+   matchLabels:
+     app: microservice-python
+ template:
+   metadata:
+     labels:
+       app: microservice-python
+   spec:
+     containers:
+     - image: eu.gcr.io/public-207110/microservice-python:latest
+       name: microservice-python
+       ports:
+       - containerPort: 8080
