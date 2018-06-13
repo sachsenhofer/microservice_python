@@ -58,6 +58,8 @@ CMD ["app.py"]
 
 ### Build
 
+Builds the Docker image.
+
 Execute in terminal:
 
 ```
@@ -67,6 +69,8 @@ sudo docker build -t microservice-python:latest .
 <br>
 
 ### Push
+
+Pushes an image or a repository to the Google Container Registry.
 
 A Google Cloud account is needed. Replace '__public-207110__' with your own Project-ID.
 
@@ -81,6 +85,8 @@ sudo docker push eu.gcr.io/public-207110/microservice-python:latest
 
 ### Pull
 
+Pulls the image from the Google Container Registry.
+
 Execute in terminal:
 
 ```
@@ -91,6 +97,8 @@ sudo docker pull eu.gcr.io/public-207110/microservice-python:latest
 
 ### Run
 
+Runs the image on your local machine.
+
 Execute in terminal:
 
 ```
@@ -100,6 +108,8 @@ sudo docker run -p 8080:8080 eu.gcr.io/public-207110/microservice-python:latest
 <br>
 
 ### Deploy
+
+Deploys the application to the Kubernetes cluster.
 
 Execute in terminal:
 
@@ -130,6 +140,8 @@ svc/microservice-python-svc   LoadBalancer   10.63.251.103   104.155.76.135   80
 <br>
 
 ### Delete
+
+To delete all resources, execute the following command.
 
 Execute in terminal:
 
