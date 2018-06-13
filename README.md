@@ -3,6 +3,13 @@
 This is a template to build a microservice for Python.
 
 <br>
+Checkout repository:
+
+```
+git clone https://github.com/sachsenhofer/microservice_python.git
+```
+
+<br>
 
 # App
 
