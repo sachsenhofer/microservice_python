@@ -120,19 +120,19 @@ microservice-python-svc   LoadBalancer   10.63.251.103   104.155.76.135   8080:3
 Ressources that have been created:
 
 ```
-kubectl get deployments,pods,services --all-namespaces
+kubectl get deployments,pods,services -n microservice
 ```
 
 ```
-NAMESPACE      NAME                             DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
-microservice   deploy/microservice-python-dep   2         2         2            2           2m
+NAME                             DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+deploy/microservice-python-dep   2         2         2            2           2m
 
-NAMESPACE      NAME                                                     READY     STATUS    RESTARTS   AGE
-microservice   po/microservice-python-dep-6b6dbdfb44-krtl7              1/1       Running   0          2m
-microservice   po/microservice-python-dep-6b6dbdfb44-rpp7x              1/1       Running   0          2m
+NAME                                          READY     STATUS    RESTARTS   AGE
+po/microservice-python-dep-6b6dbdfb44-krtl7   1/1       Running   0          2m
+po/microservice-python-dep-6b6dbdfb44-rpp7x   1/1       Running   0          2m
 
-NAMESPACE      NAME                          TYPE           CLUSTER-IP      EXTERNAL-IP      PORT(S)          AGE
-microservice   svc/microservice-python-svc   LoadBalancer   10.63.251.103   104.155.76.135   8080:30667/TCP   2m
+NAME                          TYPE           CLUSTER-IP      EXTERNAL-IP      PORT(S)          AGE
+svc/microservice-python-svc   LoadBalancer   10.63.251.103   104.155.76.135   8080:30667/TCP   2m
 ```
 
 <br>
