@@ -117,6 +117,24 @@ NAME                      TYPE           CLUSTER-IP      EXTERNAL-IP      PORT(S
 microservice-python-svc   LoadBalancer   10.63.251.103   104.155.76.135   8080:30667/TCP   2m
 ```
 
+Ressources that have been created:
+
+```
+kubectl get deployments,pods,services --all-namespaces
+```
+
+```
+NAMESPACE      NAME                             DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+microservice   deploy/microservice-python-dep   2         2         2            2           2m
+
+NAMESPACE      NAME                                                     READY     STATUS    RESTARTS   AGE
+microservice   po/microservice-python-dep-6b6dbdfb44-krtl7              1/1       Running   0          2m
+microservice   po/microservice-python-dep-6b6dbdfb44-rpp7x              1/1       Running   0          2m
+
+NAMESPACE      NAME                          TYPE           CLUSTER-IP      EXTERNAL-IP      PORT(S)          AGE
+microservice   svc/microservice-python-svc   LoadBalancer   10.63.251.103   104.155.76.135   8080:30667/TCP   2m
+```
+
 <br>
 
 ### Delete
