@@ -13,8 +13,8 @@ sudo docker build -t microservice-python:latest .
 ## Push
 
 ```
-sudo docker tag microservice-python:latest eu.gcr.io/private/microservice-python:latest
-sudo docker push eu.gcr.io/private/microservice-python:latest
+sudo docker tag microservice-python:latest eu.gcr.io/public-207110/microservice-python:latest
+sudo docker push eu.gcr.io/public-207110/microservice-python:latest
 ```
 
 ## Run
