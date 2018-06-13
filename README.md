@@ -10,7 +10,7 @@
 sudo docker build -t microservice-python:latest .
 ```
 
-## Push to Google Container Registry eu.gcr.io
+## Push
 
 ```
 sudo docker tag microservice-python:latest eu.gcr.io/private/microservice-python:latest
