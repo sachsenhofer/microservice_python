@@ -16,7 +16,7 @@ sudo docker build -t microservice-python:latest .
 
 __Push:__
 
-(Google Cloud account needed)
+A Google Cloud account is needed. Replace 'public-207110' with your own Project-ID.
 
 ```
 sudo docker tag microservice-python:latest eu.gcr.io/public-207110/microservice-python:latest
