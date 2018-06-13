@@ -55,7 +55,7 @@ CMD ["app.py"]
 
 # Usage
 
-__Build:__
+### Build
 
 ```
 sudo docker build -t microservice-python:latest .
@@ -63,7 +63,7 @@ sudo docker build -t microservice-python:latest .
 
 <br>
 
-__Push:__
+### Push
 
 A Google Cloud account is needed. Replace 'public-207110' with your own Project-ID.
 
@@ -74,7 +74,7 @@ sudo docker push eu.gcr.io/public-207110/microservice-python:latest
 
 <br>
 
-__Pull:__
+### Pull
 
 ```
 sudo docker pull eu.gcr.io/public-207110/microservice-python:latest
@@ -82,7 +82,7 @@ sudo docker pull eu.gcr.io/public-207110/microservice-python:latest
 
 <br>
 
-__Run:__
+### Run
 
 ```
 sudo docker run -p 8080:8080 eu.gcr.io/public-207110/microservice-python:latest
@@ -90,7 +90,7 @@ sudo docker run -p 8080:8080 eu.gcr.io/public-207110/microservice-python:latest
 
 <br>
 
-__Deploy:__
+### Deploy
 
 ```
 kubectl create -f deploy/kubernetes
@@ -106,7 +106,7 @@ microservice-python-svc   LoadBalancer   10.63.251.103   104.155.76.135   8080:3
 
 <br>
 
-__Delete:__
+### Delete
 
 ```
 kubectl delete -f deploy/kubernetes
