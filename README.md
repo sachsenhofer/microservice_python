@@ -1,6 +1,6 @@
 # microservice_python
 
-This is a template to build a microservice appliation for Python.
+This is a template to build a Python microservice application.
 
 <br>
 Checkout repository:
